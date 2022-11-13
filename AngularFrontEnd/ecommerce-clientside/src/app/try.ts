@@ -5,4 +5,5 @@ export class Try {
     "genre": string;
     "datePublished": string;
     "description": string;
+    "image": string;
 }

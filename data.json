@@ -5,7 +5,8 @@
         "author": "Jv Cataquiz",
         "genre": "Body Fitness",
         "datePublished": "October 12 2022",
-        "description": "For all Students who wants to learn how to dance"
+        "description": "For all Students who wants to learn how to dance",
+        "image": "https://www.cubana.co.za/wp-content/uploads/2021/01/20.10.12-159.jpg"
     },
     {
         "id": "2",
@@ -13,6 +14,7 @@
         "author": "Jv Cataquiz",
         "genre": "Programming",
         "datePublished": "October 22 2022",
-        "description": "For all Students who wants to learn how to learn to code"
+        "description": "For all Students who wants to learn how to learn to code",
+        "image": "https://pixy.org/src/482/4823344.jpg"
     }
 ]
