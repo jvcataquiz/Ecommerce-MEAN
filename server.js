@@ -4,8 +4,8 @@ const Data = require('./data.json');
 const path = require('path');
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
-
-
+const cors = require('cors');
+app.use(cors());
 app.get('/', (req, res) =>{
 res.send(Data)
 })
