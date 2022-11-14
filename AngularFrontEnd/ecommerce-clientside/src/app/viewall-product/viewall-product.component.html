@@ -1,0 +1,26 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor = "let data of product">
+        <td>{{data._id}}</td>
+        <td>{{data.fullname}}</td>
+        <td>{{data.productName}}</td>
+        <td>{{data.price}}</td>
+        <td>{{data.description}}</td>
+        <td>{{data.category}}</td>
+        <td>{{data.address}}</td>
+        <td>{{data.date}}</td>
+   
+        <td>
+            <img src= {{data.productimage}} class="img-fluid img-thumbnail">
+        </td>
+      </tr>
+    </tbody>
+  </table>

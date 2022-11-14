@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ViewTryComponent } from './view-try/view-try.component';
+import { ViewallProductComponent } from './viewall-product/viewall-product.component';
 
 const routes: Routes = [
-  {path:'', component:ViewTryComponent}
+  {path:'', component:ViewallProductComponent}
 ];
 
 @NgModule({
