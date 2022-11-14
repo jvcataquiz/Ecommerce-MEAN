@@ -1,20 +1,33 @@
 const express = require('express');
 const app = express();
-const Data = require('./data.json');
+const Product = require('./product');
+// const Data = require('./data.json');
 const path = require('path');
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'ejs');
+const mongoose = require('mongoose');
+
+
+//allowing clientside to fetch all the data
 const cors = require('cors');
 app.use(cors());
-app.get('/', (req, res) =>{
-res.send(Data)
+
+//connecting in mongodb
+mongoose.connect('mongodb://localhost:27017/Ecommerce')
+    .then(() => {
+        console.log("Connection Open");
+    })
+    .catch(err => {
+        console.log("error");
+        console.log(err);
+    });
+
+
+    //route
+app.get('/', async (req, res) =>{
+    const result = await Product.find({});
+    res.send(result )
 })
 
-const categories = ['fruit', 'vegetable', 'dairy'];
 
-app.get('/new', (req, res) => {
-    res.send(categories);
-})
 
 app.listen(8080, () => {
     console.log("listening on port 8080");
